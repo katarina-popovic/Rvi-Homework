@@ -7,6 +7,8 @@ public class BaseCharacter : MonoBehaviour, IDamageable
     private int health;
     public int Health { get { return health; } }
 
+    public RectTransform rTransform;
+
     public void Die()
     {
         Destroy(gameObject);
